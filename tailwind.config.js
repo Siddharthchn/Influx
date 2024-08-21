@@ -1,5 +1,5 @@
-/** @type {import('tailwindcss').Config} */
-export default {
+// tailwind.config.js
+module.exports = {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -7,8 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        altivo: ['Altivo-Black', 'sans-serif'],
-        // Add more custom fonts if needed
+        altivo: ['Altivo', 'sans-serif'], // Use 'Altivo' as the font family name
       },
     },
   },

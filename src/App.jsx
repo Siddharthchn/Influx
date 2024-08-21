@@ -5,7 +5,7 @@ import Questions from './components/Questions'
 
 function App() {
   return (
-    <div>
+    <div className='font-altivo'>
       <NavHero />
       <Movies/>
       <Questions />
