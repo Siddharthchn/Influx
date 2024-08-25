@@ -277,13 +277,7 @@ const StepForm = () => {
               </div>
 
               <div className="flex justify-between">
-                <button
-                  className="px-6 py-2 text-sm text-gray-300 underline"
-                  onClick={prevStep}
-                  disabled={currentStep === 1}
-                >
-                  Back
-                </button>
+               <div></div>
                 <button
                   className="md:px-16 md:py-3 px-8 py-2 text-sm bg-[#CF102D] text-white rounded-full"
                   onClick={nextStep}

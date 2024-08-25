@@ -2,9 +2,12 @@ import React, { useEffect } from 'react';
 import img from '../assets/Images/Asset-1.png' 
 import img2 from '../assets/Images/Icon-5.svg' 
 import { MdOutlineReplay } from 'react-icons/md';
+import { useNavigate } from 'react-router-dom';
 
 const ConfirmationPage = () => {
 
+    const navigate = useNavigate();
+    
 
     useEffect(() => {
         // Scroll to the top when the component mounts
@@ -112,7 +115,7 @@ const ConfirmationPage = () => {
             <button
               className="mt-10 bg-[#CF102D] text-white font-bold py-2 px-4 rounded-full hover:bg-red-700 transition duration-300"
               onClick={() => {
-                window.location.href = "/";
+                navigate('/');
               }}
             >
               Back to homepage
