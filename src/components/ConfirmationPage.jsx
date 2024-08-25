@@ -14,7 +14,7 @@ const ConfirmationPage = () => {
   return (
     
     <div className="flex items-center justify-center h-full md:min-h-screen bg-[#131313] text-white px-[60px] md:px-0 py-[20px] md:py-0">
-      <div className="max-w-4xl mx-auto p-8 flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-12 lg:space-x-24">
+      <div className="max-w-4xl mx-auto p-8 flex flex-col md:flex-row space-y-14 md:space-y-0 md:space-x-12 lg:space-x-24">
         {/* Left Side */}
         <div className="relative w-full md:w-1/2">
           <div className="relative h-64 overflow-hidden rounded-t-lg">
