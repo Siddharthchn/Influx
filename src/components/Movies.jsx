@@ -12,8 +12,16 @@ import home from '../assets/Home.svg';
 import { TbMessage } from "react-icons/tb";
 
 import { FaArrowRight } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Movies = () => {
+
+  const navigate = useNavigate();
+
+  const handleGetStartedClick = () => {
+    navigate('/details');
+  };
+
   return (
     <div className="bg-[#141414] h-full  md:h-screen flex flex-col-reverse md:flex-row items-center justify-center xl:gap-[60px] lg:gap-[30px] md:gap-[30px] gap-[40px] px-[20px] md:px-0 pb-10 md:pb-0">
         {/* left side */}
@@ -54,7 +62,7 @@ const Movies = () => {
             <div className="absolute h-[35px] left-[14px] top-[120px] md:left-[12px] md:top-[116px] md:h-[60px] lg:left-[15px] lg:top-[90px] lg:h-[33px] border-l-2 border-[#AA9681]"></div>
 
             <div className="flex items-center gap-[12px] mt-8 md:mt-0">
-              <div className="w-8 h-8 rounded-full border-2 border-[#AA9681] flex items-center justify-center relative z-50">
+              <div className="w-8 h-8 rounded-full border-2 border-[#AA9681] flex items-center justify-center relative z-1">
                 <span className="text-[#AA9681] text-base font-medium">1</span>
               </div>
               <div className="leading-[18px] text-[#797979]">
@@ -89,7 +97,7 @@ const Movies = () => {
         {/* What is text end*/}
         {/* buttons */}
         <div className="hidden md:flex mt-10 md:gap-[20px] lg:gap-[50px] items-center">
-            <button className="bg-[#CF112D] text-[#D8D8D8] flex items-center px-10 py-3 rounded-md lg:gap-[10px] md:gap-[5px] lg:text-[15px] md:text-[12px]"> 
+            <button className="bg-[#CF112D] text-[#D8D8D8] flex items-center px-10 py-3 rounded-md lg:gap-[10px] md:gap-[5px] lg:text-[15px] md:text-[12px]"  onClick={handleGetStartedClick}> 
                 <span>Get Started</span>
                 <span><FaArrowRight /></span>
             </button>

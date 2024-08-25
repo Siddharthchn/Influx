@@ -24,6 +24,8 @@ const NavHero = () => {
     };
   }, []);
 
+ 
+
 
   return (
     <div className="relative h-screen font-altivo md:block hidden">
