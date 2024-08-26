@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+import { FaArrowRight } from 'react-icons/fa';
 import { IoIosArrowDown } from 'react-icons/io';
+import { useNavigate } from "react-router-dom";
 
 const Questions = () => {
   const [openAccordion, setOpenAccordion] = useState(null);
@@ -7,6 +9,13 @@ const Questions = () => {
   const toggleAccordion = (index) => {
     setOpenAccordion(openAccordion === index ? null : index);
   };
+
+  const navigate = useNavigate();
+
+  const handleGetStartedClick = () => {
+    navigate('/details');
+  };
+
 
   return (
     <div className='bg-[#000000] h-full pb-[50px] text-[#D8D8D8]'>
@@ -152,6 +161,12 @@ const Questions = () => {
             </div>
           )}
         </div>
+      </div>
+      <div className='flex md:hidden items-center justify-center pt-2'>
+      <button className="bg-[#CF112D] text-[#D8D8D8] flex items-center px-24 py-3 rounded-md lg:gap-[10px] gap-[10px] lg:text-[15px] md:text-[12px]"  onClick={handleGetStartedClick}> 
+                <span>Get Started</span>
+                <span><FaArrowRight /></span>
+            </button>
       </div>
     </div>
   );
