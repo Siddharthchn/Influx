@@ -496,18 +496,18 @@ const StepForm = () => {
                         />
                       </div>
 
-                      {/* Password Input */}
+                      {/* CVV Input */}
                       <div className="flex flex-col">
                         <label className="text-gray-400 text-xs mb-1">
                           CVV*
                         </label>
                         <input
                           type="number"
-                          className="w-full p-2 bg-[#2C2C2C] text-white rounded-md mb-8"
+                          className="w-full p-2 bg-[#2C2C2C] text-white rounded-md md:mb-8 mb-4"
                         />
                       </div>
                     </div>
-                    <div className="flex gap-[10px] items-center px-[15px]">
+                    <div className="flex gap-[10px] items-center px-[2px] md:px-[15px]">
                       <input className="mt-[-20px]" type="radio" />
                       <p className="text-sm text-gray-200">
                         I agree to consent to use the same card for <br />
