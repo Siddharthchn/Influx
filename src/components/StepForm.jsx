@@ -19,6 +19,7 @@ const StepForm = () => {
   const [storedEmail, setStoredEmail] = useState("");
   const [isTermsChecked, setIsTermsChecked] = useState(false); // Add this state
   const navigate = useNavigate(); // Initialize the navigate function
+  
 
   useEffect(() => {
     
