@@ -94,7 +94,7 @@ const StepForm = () => {
   };
 
   return (
-    <div className={`bg-[#1D1C20] h-full w-full text-white flex items-center justify-center pt-[50px] ${currentStep === 4 ? "lg:pb-[250px] md:pb-[360px] pb-[480px]" : "pb-[150px]"}`}>
+    <div className={`bg-[#1D1C20] h-full w-full text-white flex items-center justify-center pt-[50px] ${currentStep === 4 ? "lg:pb-[250px] md:pb-[360px] pb-[530px]" : "pb-[150px]"}`}>
       <div className="flex flex-col lg:flex-row gap-[50px] lg:gap-0">
         {/* Sidebar with steps */}
         <div className="xl:w-[500px] xl:h-[500px] lg:w-[400px] lg:h-[400px] md:w-[450px] md:h-[500px] w-[300px] h-[300px] flex flex-col lg:items-start items-center justify-center xl:pl-16 lg:pl-8 xl:pb-36 lg:pb-8 relative mx-[50px] md:px-0 mt-6 md:pt-0">
